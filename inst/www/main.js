@@ -1,3 +1,4 @@
+/*
 $('.search-li').on('mouseover', 
   function() {
     'use strict';
@@ -28,9 +29,10 @@ $('#searchSubmit').on('click', function() {
   }
   
 });
-/*
+*/
+
 $(document).ready(function() {
   'use strict';
   $('[data-toggle="tooltip"]').tooltip();
 });
-*/
+
