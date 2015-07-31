@@ -6,7 +6,7 @@
         <div class="social-buttons">
           <div class="dropdown">
             <form action = "http://www.ncrad.org/donate.html" style = "display: inline;">
-              <button type = "submit" class = "btn btn-ncrad-green"><i class = "fa fa-usd"></i> Donate</button>
+              <button type = "button" class = "btn btn-ncrad-green" onclick="javascript:this.form.submit();"><i class = "fa fa-usd"></i> Donate</button>
             </form>
             <button class = "btn btn-ncrad-purple" class="dropdown-toggle" data-toggle="dropdown"><i class = "fa fa-envelope-o"></i> Contact</button>
             <ul class="dropdown-menu dropdown-menu-right">
@@ -25,17 +25,17 @@
                       <textarea name = "Message" id = "contactMessage" placeholder="Write your message.." class="form-control"></textarea>
                     </div>
                     <div class="form-group " style = "text-align: right;">
-                      <button type="submit" class="btn btn-ncrad-blue">Send</button>
+                      <button type="button" class="btn btn-ncrad-blue" onclick="javascript:this.form.submit();">Send</button>
                     </div>
                   </form>
                 </div>
               </li>
             </ul>
           </div>
-          <div class = "search-li">
+<!--          <div class = "search-li">
             <input class = "search-open" type = "text" id = "searchInput" name = "searchInput" placeholder = "Search..." />
             <a href = "#"><i class = "fa fa-search"></i></a>
-          </div>
+          </div>-->
         </div>
       </div>
       <nav class="navbar navbar-ncrad hidden-print">
@@ -108,7 +108,7 @@
                           <li><a href = "http://www.ncrad.org/understanding_autopsy_reports.html">Understanding Autopsy Reports</a></li>
                           <li><a href = "http://www.ncrad.org/autopsy_and_religion.html">Autopsy and Religion</a></li>
                           <li class = "ncrad-dropdown-header">Newsletters</li>
-                          <li><a href = "docs/NCRAD_Update/NCRAD_Update_22.pdf" target = "_blank">Current Issue</a></li>
+                          <li><a href = "http://www.ncrad.org/newsletter_current.html" target = "_blank">Current Issue</a></li>
                           <li><a href = "http://www.ncrad.org/ncrad_update_archives.html" target = "_blank">Archives</a></li>
                         </ul>
                       </div>
