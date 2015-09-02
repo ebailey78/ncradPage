@@ -4,10 +4,10 @@
       <div class = "social-bar hidden-print">
         <a href = "http://www.ncrad.org/index.html" class = "navbar-logo"><img src = "ncrad/images/ncradlogo2.png" class = "visible-md-inline visible-lg-inline"></img></a>
         <div class="social-buttons">
+          <form action = "http://www.ncrad.org/donate.html" style = "display: inline;">
+            <button type = "button" class = "btn btn-ncrad-green" onclick="javascript:this.form.submit();"><i class = "fa fa-usd"></i> Donate</button>
+          </form>
           <div class="dropdown">
-            <form action = "http://www.ncrad.org/donate.html" style = "display: inline;">
-              <button type = "button" class = "btn btn-ncrad-green" onclick="javascript:this.form.submit();"><i class = "fa fa-usd"></i> Donate</button>
-            </form>
             <button class = "btn btn-ncrad-purple" class="dropdown-toggle" data-toggle="dropdown"><i class = "fa fa-envelope-o"></i> Contact</button>
             <ul class="dropdown-menu dropdown-menu-right">
               <li>
@@ -15,15 +15,22 @@
                   <form action="http://www.ncrad.org/formsubmit.php" method = "post">
                     <h4>Contact Us</h4>
                     <input type = "hidden" name = "subjectLine" value = "Contact Us Submission" />
+
                     <div class="form-group">
-                      <input name = "Name" id="contactName" type="text" placeholder="Name" class="form-control">
+                      <input name = "Name" id="contactName" type="text" placeholder="Name" class="form-control" maxlength = 50>
                     </div>
                     <div class="form-group">
-                      <input name = "Email" id="contactEmail" type="text" placeholder="Email" class="form-control">
+                      <input name = "Email" id="contactEmail" type="text" placeholder="Email" class="form-control" data-inputmask="'alias':'email'" maxlength = 50>
                     </div>
                     <div class="form-group">
-                      <textarea name = "Message" id = "contactMessage" placeholder="Write your message.." class="form-control"></textarea>
+                      <textarea name = "Message" id = "contactMessage" placeholder="Write your message.." class="form-control" maxlength = 500></textarea>
+                      <div style = "margin-top: -15px; font-size: 0.85em; color: #999;">Characters Remaining: <span id = "charCount">500</span></div>
                     </div>
+                    <p style = "line-height: 1.1em; font-size: 0.9em; color: #666; justify; margin-top: -20px;">
+                      If you are contacting us regarding an emergency autopsy for the NCRAD or LOAD studies, please call 1-800-526-2839.  
+                      If this is after hours, please page 317-312-2714 instead.
+                      Thank you!
+                    </p>
                     <div class="form-group " style = "text-align: right;">
                       <button type="button" class="btn btn-ncrad-blue" onclick="javascript:this.form.submit();">Send</button>
                     </div>
@@ -32,6 +39,9 @@
               </li>
             </ul>
           </div>
+          <form action = "http://www.ncrad.org/search.html" style = "display: inline;">
+            <button type = "button" class = "btn btn-ncrad-orange" onclick="javascript:this.form.submit();"><i class = "fa fa-search"></i> Search</button>
+          </form>
 <!--          <div class = "search-li">
             <input class = "search-open" type = "text" id = "searchInput" name = "searchInput" placeholder = "Search..." />
             <a href = "#"><i class = "fa fa-search"></i></a>

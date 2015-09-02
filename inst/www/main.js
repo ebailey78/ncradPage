@@ -34,5 +34,10 @@ $('#searchSubmit').on('click', function() {
 $(document).ready(function() {
   'use strict';
   $('[data-toggle="tooltip"]').tooltip();
+  $(":input").inputmask();
 });
 
+$("#contactMessage").on("change keyup", function(ev) {
+  var $this = $(this), $cc = $("#charCount");
+  $cc.text(500 - $this.val().length);
+})
